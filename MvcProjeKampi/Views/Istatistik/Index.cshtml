@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mt-3 mr-6">
+            <div class="card text-white bg-olive mb-3" style="width:350px;height:200px">
+                <div class="card-body">
+                    <h1>@ViewBag.categoryCount</h1>
+                    <p class="card-text" style="font-size:28px">Toplam Kategori Sayısı</p>
+                </div>
+            </div>
+        </div>
+        <div class=" col-md-4 mt-3 mr-4">
+            <div class="card text-white bg-cyan mb-3" style="width:350px;height:200px">
+                <div class="card-body">
+                    <h1>@ViewBag.heading</h1>
+                    <p class="card-text" style="font-size:28px">"Yazılım" Kategorisine Ait Başlık Sayısı</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-3 mr-4">
+            <div class="card text-white bg-pink mb-3" style="width:350px;height:200px">
+                <div class="card-body">
+                    <h1>@ViewBag.writer</h1>
+                    <p class="card-text" style="font-size:28px">Adında 'A' Harfi Geçen Yazar Sayısı</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 mt-3 mr-4">
+            <div class="card text-white bg-gradient-yellow mb-3" style="width:350px;height:200px">
+                <div class="card-body">
+                    <h1>@ViewBag.headingMax</h1>
+                    <p class="card-text" style="font-size:28px">En Fazla Başlığa Sahip Kategori</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mt-3 mr-4">
+            <div class="card text-white bg-gradient-orange mb-3" style="width:350px;height:200px">
+                <div class="card-body">
+                    <h1>@ViewBag.Status</h1>
+                    <p class="card-text" style="font-size:28px">Durumu True İle False Olanlar Arasındaki Fark</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
